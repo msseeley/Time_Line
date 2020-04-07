@@ -63,19 +63,26 @@ h1{
   width: 400px;
   padding: 1rem;
   background: var(--secondary-color);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.75s ease-in-out;
+  /* initial stage for animation effect */
+  visibility: hidden;
+  opacity: 0;
 }
 
 /* right side */
 
 #timeline ul li:nth-child(odd) div{
   left: 40px;
+  /* initial stage for animation effect */
+  transform: translate(200px,0)
 }
 
 
 /* left side */
  #timeline ul li:nth-child(even) div{
   left: -437px;
+  /* initial stage for animation effect */
+  transform: translate(-200px,0);
 }
 
 #timeline ul li:after{
@@ -114,6 +121,13 @@ h1{
   right: -15px;
   border-width: 8px 0px 8px 16px;
   border-color: transparent transparent transparent var(--secondary-color);
+}
+
+/* Show boxes */
+#timeline ul li.show div{
+  visibility: visible;
+  transform: none;
+  opacity: 1;
 }
 
 @media(max-width: 900px){
