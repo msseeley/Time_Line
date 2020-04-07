@@ -15,11 +15,11 @@ window.innerWidth
 document.documentElement
   returns the Element that is the root element of the document
 
-  clientHeight
-   Returns a Number representing the inner height of the element.
+    clientHeight
+      Returns a Number representing the inner height of the element.
 
-  clientWidth
-   Returns a Number representing the inner width of the element.
+    clientWidth
+      Returns a Number representing the inner width of the element.
 */
 
 // checks if the element is in the viewport
@@ -34,14 +34,14 @@ const isInViewport = el => {
   );
 }
 
-// runs through each item of the DOM ?
+// runs through each item of the DOM and assigns annimation class "show" if item is in the viewport
 const run = () => items.forEach(item => {
   if (isInViewport(item)) item.classList.add('show');
 });
 
 /*
 conditions underwhich run will be triggered
-- on page load, page resize, and page scroll
+  on page load, page resize, and page scroll
 */
 
 window.addEventListener('load', run);
