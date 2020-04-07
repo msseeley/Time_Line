@@ -84,7 +84,7 @@ h1{
   /* initial stage for animation effect */
   transform: translate(-200px,0);
 }
-
+/* Dots */
 #timeline ul li:after{
   content: '';
   position: absolute;
@@ -92,7 +92,7 @@ h1{
   bottom: 0;
   width: 25px;
   height: 25px;
-  background: var(--secondary-color);
+  background: inherit;
   /*function repositions an element horizontally on the 2D plane */
   transform: translateX(-50%);
   border-radius: 50%;
@@ -128,6 +128,11 @@ h1{
   visibility: visible;
   transform: none;
   opacity: 1;
+}
+
+/* Dots color-change */
+#timeline ul li.show:after{
+  background: var(--secondary-color);
 }
 
 @media(max-width: 900px){
