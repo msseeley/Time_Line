@@ -10,3 +10,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body{
+  /* shorthand
+  ____________default normal ____________
+  font-style | font-variant | font-weight | font-size/line-height| font-family | ... etc */
+  font: normal 1rem/1.5 'Arial', sans-serif;
+  background: var(--primary-color);
+  color: #fff;
+  overflow-x: hidden;
+  padding-bottom: 50px;
+}
+
+#main-header{
+  background: var(--secondary-color);
+  padding: 4rem;
+}
+
+.container{
+  max-width: var(--max-width);
+  margin: 0 auto;
+  text-align: center;
+}
